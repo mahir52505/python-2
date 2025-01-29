@@ -1,0 +1,23 @@
+myfamily = ("mother", "father", "sister", "brother", "sister")
+
+# 1. Check the type of myfamily
+type_of_myfamily = type(myfamily)
+print("Type of myfamily:", type_of_myfamily)
+
+# 2. Access tuple items (sister) by index
+sister1 = myfamily[2]
+sister2 = myfamily[4]
+print("First 'sister':", sister1)
+print("Second 'sister':", sister2)
+
+# 3. Check if we can use append() (Tuples are immutable)
+try:
+    myfamily.append("me")
+except AttributeError as e:
+    print("Error:", e)
+
+# 4. Check if we can use pop() (Tuples are immutable)
+try:
+    myfamily.pop()
+except AttributeError as e:
+    print("Error:", e)
