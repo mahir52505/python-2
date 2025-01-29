@@ -1,0 +1,13 @@
+laptop = {"brand": "dell", "model": "alienware", "year": 2010}
+
+# 1. Print the brand value
+print("Brand:", laptop["brand"])
+
+# 2. Add new key-value pair (home: True)
+laptop["home"] = True
+
+# 3. Modify the value of the key 'year' to 2019
+laptop["year"] = 2019
+
+# Print the updated dictionary
+print("Updated Laptop Info:", laptop)
