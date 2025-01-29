@@ -1,0 +1,13 @@
+# Create an empty dictionary to store user information
+user = {}
+
+# Get user input and store in the dictionary
+user["name"] = input("What is the user's name? ")  # User types here
+user["age"] = input("What is the user's age? ")  # User types here
+user["country"] = input("What is the user's country of birth? ")  # User types here
+user["known_for"] = input("What is the user known for? ")  # User types here
+
+# Print user information
+print("\nUser Information:")
+for key, value in user.items():
+    print(f"{key.capitalize()}: {value}")
